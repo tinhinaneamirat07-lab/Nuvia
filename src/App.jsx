@@ -1,17 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Hero from "./components/Hero/Hero";
 // components
+import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import Recipes from "./components/Recipes/Recipes";
-import Footer from "./components/Footer/Footer";
 import CookingTips from "./components/CookingTips/CookingTips";
 import CallToAction from "./components/CallToAction/CallToAction";
+import Footer from "./components/footer/Footer";
 import Planner from "./components/planner/Planner";
+import Recipes from "./components/recipes/Recipes";
+
+
+
+
+
 
 // pages
-
-import Profile from "./pages/Profile/Profile";
 import Auth from "./pages/Auth/AuthModal";
+import Profile from "./pages/Profile/Profile";
+
+
+
+
 
 
 import "./App.css";
@@ -29,10 +37,10 @@ function App() {
           element={
             <>
               <Hero/>
-              <CookingTips />
+              <CookingTips/>
               <Recipes />
               <CallToAction />
-              <Footer />
+              <Footer/>
             </>
           }
         />
@@ -44,7 +52,7 @@ function App() {
        
 
         {/* OTHERS */}
-        <Route path="/planner" element={<Planner />} />
+        <Route path="/planner" element={<Planner/>} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>

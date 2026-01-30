@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Hero from "./components/Hero/Hero";
 // components
 import Navbar from "./components/Navbar/Navbar";
 import Recipes from "./components/Recipes/Recipes";
@@ -15,7 +15,7 @@ import Auth from "./pages/Auth/AuthModal";
 
 
 import "./App.css";
-import Hero from "./components/Hero/Hero";
+
 function App() {
   return (
     <BrowserRouter>

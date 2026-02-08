@@ -3,11 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import CookingTips from "./components/CookingTips/CookingTips";
-import CallToAction from "./components/CallToAction/CallToAction";
 import Footer from "./components/footer/Footer";
 import Planner from "./components/planner/Planner";
 import Recipes from "./components/recipes/Recipes";
-
 // pages
 import Auth from "./pages/Auth/AuthModal";
 import Profile from "./pages/Profile/Profile";
@@ -31,7 +29,6 @@ function App() {
               <Hero />
               <CookingTips />
               <Recipes />
-              <CallToAction />
               <Footer />
             </>
           }

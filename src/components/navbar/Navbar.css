@@ -1,28 +1,36 @@
 .navbar {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 12px;
+  left: 8%;
+  right: 8%;
+  width: auto;
+  height: 90px;
   padding: 22px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
   transition: all 0.4s ease;
-  background: transparent;
+  background: linear-gradient(135deg, rgba(38, 28, 19, 0.95), rgba(55, 40, 26, 0.9));
+  border-radius: 35px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
 }
 
 .navbar.scrolled {
-  background: rgba(246, 241, 234, 0.85);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 /* LOGO */
 .logo {
   font-family: "Playfair Display", serif;
   font-size: 28px;
-  font-weight: 500;
-  color: #3f2f1f;
+  font-weight: 400;
+  color: #d9cbb8;
   letter-spacing: 1px;
 }
 
@@ -35,8 +43,9 @@
 .links a {
   text-decoration: none;
   font-size: 14px;
-  letter-spacing: 0.6px;
-  color: #5a4632;
+  letter-spacing: 0.5px;
+  color: #d2c2ad;
+  font-weight: 400;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -61,24 +70,25 @@
 .cta {
   padding: 10px 24px;
   border-radius: 40px;
-  border: 1px solid #b79b78;
-  color: #5a4632;
+  border: 1px solid #d1b997;
+  color: #d9cbb8;
   font-size: 13px;
   letter-spacing: 0.4px;
+  font-weight: 400;
   text-decoration: none;
   transition: all 0.35s ease;
 }
 
 .cta:hover {
-  background: #b79b78;
-  color: #fff;
+  background: #d1b997;
+  color: #2f2419;
 }
 
 .link-btn {
   background: none;
   border: none;
   font: inherit;
-  color: #5a4632;
+  color: #d2c2ad;
   cursor: pointer;
   position: relative;
 }

@@ -1,13 +1,13 @@
 .footer {
   background: var(--deep-brown);
   color: rgba(255, 248, 241, 0.8);
-  padding: 90px 8% 40px;
+  padding: 60px 8% 28px;
 }
 
 .footer-inner {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 80px;
+  gap: 48px;
   max-width: 1200px;
   margin: auto;
 }
@@ -15,30 +15,30 @@
 /* BRAND */
 .footer-brand h2 {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--soft-ivory);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .footer-brand p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   color: rgba(255, 248, 241, 0.65);
 }
 
 /* LINKS */
 .footer h4 {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   color: var(--burnished-gold);
 }
 
 .footer a {
   display: block;
-  margin-bottom: 12px;
-  font-size: 13.5px;
+  margin-bottom: 8px;
+  font-size: 12.5px;
   text-decoration: none;
   color: rgba(255, 248, 241, 0.65);
   transition: color 0.3s ease;
@@ -50,8 +50,8 @@
 
 /* BOTTOM */
 .footer-bottom {
-  margin-top: 70px;
-  padding-top: 30px;
+  margin-top: 40px;
+  padding-top: 20px;
   border-top: 1px solid rgba(255, 248, 241, 0.12);
   text-align: center;
   font-size: 12.5px;

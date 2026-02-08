@@ -1,4 +1,4 @@
-/* =========================
+﻿/* =========================
    SECTION
 ========================= */
 
@@ -11,6 +11,10 @@
 /* HEADER */
 .recipes-head {
   margin-bottom: 70px;
+}
+
+.recipes-head-alt {
+  margin-top: 90px;
 }
 
 .recipes-head span {
@@ -53,11 +57,12 @@
 .habit-card {
   position: absolute;
   width: 320px;
-  height: 360px; /* ⬅️ smaller */
+  height: 360px; /* â¬…ï¸ smaller */
   border-radius: 26px;
   overflow: hidden;
   background: linear-gradient(135deg, #e3d5c2, #f3ede5);
   cursor: pointer;
+  transform-style: preserve-3d;
   transform:
     translateX(calc(var(--offset) * 220px))
     scale(calc(1 - (var(--abs) * 0.12)))
@@ -71,6 +76,62 @@
   z-index: calc(10 - var(--abs));
 }
 
+
+/* FRONT/BACK SWAP */
+.habit-front,
+.habit-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  transition: all 0.4s ease;
+  border-radius: 26px;
+}
+
+.habit-front {
+  height: 100%;
+  opacity: 1;
+}
+
+.habit-card:hover .habit-front {
+  height: 0;
+  opacity: 0;
+}
+
+.habit-back {
+  height: 0%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  background: linear-gradient(135deg, #f6efe6, #e4d5c6);
+  color: #2f2419;
+  transform: rotate(90deg) scale(-1);
+}
+
+.habit-card:hover .habit-back {
+  height: 100%;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.habit-back-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.habit-back-content ul,
+.habit-back-content ol {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.habit-back-content li {
+  margin-bottom: 4px;
+}
 /* IMAGE */
 .habit-card img {
   width: 100%;
@@ -119,6 +180,7 @@
   font-size: 13px;
   letter-spacing: 0.4px;
   cursor: pointer;
+  transform-style: preserve-3d;
   transition: all 0.35s ease;
 }
 
@@ -128,6 +190,19 @@
 }
 
 .habit-save.saved {
+  background: #b79b78;
+  border-color: #b79b78;
+  color: #fff;
+}
+
+/* BACK PANEL SAVE */
+.habit-save-back {
+  margin-top: 10px;
+  background: #2f2419;
+  border-color: #2f2419;
+}
+
+.habit-save-back:hover {
   background: #b79b78;
   border-color: #b79b78;
   color: #fff;
@@ -183,6 +258,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
+  transform-style: preserve-3d;
   transition: all 0.3s ease;
 }
 
@@ -200,3 +276,4 @@
     padding: 10px 25px;
   }
 }
+

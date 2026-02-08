@@ -43,9 +43,8 @@ export default function CookingTips() {
         <span className="philosophy-eyebrow">The Nuvia Philosophy</span>
 
         <h2>
-          Cooking is not a task.
-          <br />
-          <span>It’s a ritual.</span>
+Cooking is more than just a task     <br />
+          <span> It’s an experience.</span>
         </h2>
 
         <div className="philosophy-grid">

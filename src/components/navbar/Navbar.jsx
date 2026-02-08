@@ -22,10 +22,10 @@ export default function Navbar() {
         </Link>
         <a href="#recipes">Recipes</a>
         <Link
-          to="/planner"
-          className={location.pathname === "/planner" ? "active" : ""}
+          to="/explore"
+          className={location.pathname === "/explore" ? "active" : ""}
         >
-          Planner
+          Explore
         </Link>
         <Link
           to="/profile"

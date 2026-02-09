@@ -90,7 +90,7 @@ export default function Recipes() {
       _id: "d1",
       title: "Citrus Spark",
       mood: "Bright & refreshing",
-      img: "public/Tangerine Light Mocktail _ Jeju Tangerine, Barley Tea & Yuzu.jpg",
+      img: "/Pics/Tangerine Light Mocktail _ Jeju Tangerine, Barley Tea & Yuzu.jpg",
       ingredients: ["Orange", "Lemon", "Sparkling water", "Mint", "Ice"],
       steps: ["Slice citrus", "Muddle mint", "Add ice", "Top with sparkle"],
     },
@@ -98,7 +98,7 @@ export default function Recipes() {
       _id: "d2",
       title: "Velvet Mocha",
       mood: "Deep & cozy",
-      img: "public/télécharger (24).jpg",
+      img: "/télécharger (24).jpg",
       ingredients: ["Espresso", "Cocoa", "Milk", "Vanilla", "Sugar"],
       steps: ["Brew espresso", "Whisk cocoa", "Steam milk", "Combine & pour"],
     },
@@ -106,7 +106,7 @@ export default function Recipes() {
       _id: "d3",
       title: "Garden Tonic",
       mood: "Herbal & crisp",
-      img: "public/Moxito.jpg",
+      img: "/Moxito.jpg",
       ingredients: ["Cucumber", "Lime", "Tonic", "Basil", "Ice"],
       steps: ["Slice cucumber", "Squeeze lime", "Add ice", "Top with tonic"],
     },
@@ -114,7 +114,7 @@ export default function Recipes() {
       _id: "d4",
       title: "Spiced Chai",
       mood: "Warm & calming",
-      img: "public/Cozy Masala Chai Latte.jpg",
+      img: "/Cozy Masala Chai Latte.jpg",
       ingredients: ["Black tea", "Milk", "Cinnamon", "Cardamom", "Honey"],
       steps: ["Simmer spices", "Brew tea", "Add milk", "Sweeten & serve"],
     },
@@ -122,7 +122,7 @@ export default function Recipes() {
       _id: "d5",
       title: "Berry Cloud",
       mood: "Soft & sweet",
-      img: "public/Blue Matcha Latte_ Caffeine-Free Beauty You Can Sip.jpg",
+      img: "/Blue Matcha Latte_ Caffeine-Free Beauty You Can Sip.jpg",
       ingredients: ["Berries", "Yogurt", "Milk", "Honey", "Ice"],
       steps: ["Blend berries", "Add yogurt", "Add milk", "Blend smooth"],
     },
@@ -130,7 +130,7 @@ export default function Recipes() {
       _id: "d6",
       title: "Matcha Bloom",
       mood: "Clean & earthy",
-      img: "public/Matcha-Infused Cold Brew with Black Sesame Foam.jpg",
+      img: "/Matcha-Infused Cold Brew with Black Sesame Foam.jpg",
       ingredients: ["Matcha", "Hot water", "Oat milk", "Honey"],
       steps: ["Whisk matcha", "Warm milk", "Combine", "Sweeten"],
     },
@@ -138,7 +138,7 @@ export default function Recipes() {
       _id: "d7",
       title: "Rose Lemonade",
       mood: "Floral & light",
-      img: "public/télécharger (25).jpg",
+      img: "/télécharger (25).jpg",
       ingredients: ["Lemon", "Rose water", "Water", "Sugar", "Ice"],
       steps: ["Juice lemons", "Add sugar", "Mix water", "Add rose"],
     },
@@ -146,7 +146,7 @@ export default function Recipes() {
       _id: "d8",
       title: "Cold Brew Noir",
       mood: "Bold & smooth",
-      img: "public/Nitro CaffÃ¨ White_ Creamy Cold Brew Coffee with Whipped Cream  Chocolate Syrup.jpg",
+      img: "/Nitro CaffÃ¨ White_ Creamy Cold Brew Coffee with Whipped Cream  Chocolate Syrup.jpg",
       ingredients: ["Coffee grounds", "Water", "Ice", "Cream"],
       steps: ["Steep overnight", "Strain", "Add ice", "Finish with cream"],
     },
@@ -154,7 +154,7 @@ export default function Recipes() {
       _id: "d9",
       title: "Golden Latte",
       mood: "Glow & comfort",
-      img: "public/How to Make Golden Milk Turmeric Tea - Masala Haldi Doodh.jpg",
+      img: "/How to Make Golden Milk Turmeric Tea - Masala Haldi Doodh.jpg",
       ingredients: ["Turmeric", "Milk", "Ginger", "Honey", "Cinnamon"],
       steps: ["Warm milk", "Whisk spices", "Sweeten", "Serve warm"],
     },
@@ -316,7 +316,7 @@ export default function Recipes() {
                         toggleSave(r);
                       }}
                     >
-                      {saved.includes(r._id) ? "â™¥ Saved" : "â™¡ Save"}
+                      {saved.includes(r._id) ? "\u2665 Saved" : "\u2661 Save"}
                     </button>
                   </div>
                 </div>
@@ -382,7 +382,7 @@ export default function Recipes() {
                         toggleDrinkSave(d._id);
                       }}
                     >
-                      {savedDrinks.includes(d._id) ? "â™¥ Saved" : "â™¡ Save"}
+                      {savedDrinks.includes(d._id) ? "\u2665 Saved" : "\u2661 Save"}
                     </button>
                   </div>
                 </div>
@@ -401,7 +401,4 @@ export default function Recipes() {
     </section>
   );
 }
-
-
-
 

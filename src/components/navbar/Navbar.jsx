@@ -5,12 +5,34 @@ import "./Navbar.css";
 export default function Navbar() {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Check if user is logged in
+  useEffect(() => {
+    const checkAuthStatus = () => {
+      const user = localStorage.getItem("user");
+      setIsLoggedIn(!!user);
+    };
+
+    checkAuthStatus();
+    
+    // Listen for storage changes (login/logout from other tabs)
+    window.addEventListener("storage", checkAuthStatus);
+    
+    return () => window.removeEventListener("storage", checkAuthStatus);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setIsLoggedIn(false);
+    window.location.href = "/";
+  };
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
@@ -35,9 +57,15 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <Link to="/login" className="cta">
-        login / Register
-      </Link>
+      {isLoggedIn ? (
+        <button onClick={handleLogout} className="cta">
+          Logout
+        </button>
+      ) : (
+        <Link to="/login" className="cta">
+          Login / Register
+        </Link>
+      )}
     </nav>
   );
 }

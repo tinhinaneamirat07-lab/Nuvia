@@ -29,6 +29,7 @@ function App() {
               <Hero />
               <CookingTips />
               <Recipes />
+              <Planner />
               <Footer />
             </>
           }

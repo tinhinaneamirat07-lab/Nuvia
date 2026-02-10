@@ -263,7 +263,6 @@ export default function Recipes() {
     <section className="recipes-habit" id="recipes">
       <div className="recipes-head">
         <span>RECIPES AS RITUALS</span>
-        <h2>Choose a moment</h2>
       </div>
 
       <div className="habit-carousel">
@@ -328,7 +327,6 @@ export default function Recipes() {
       </div>
 
       <div className="recipes-head recipes-head-alt">
-        <h2>Choose a sip</h2>
       </div>
 
       <div className="habit-carousel">
@@ -391,12 +389,6 @@ export default function Recipes() {
         </div>
       </div>
 
-      <button
-        onClick={() => window.location.href = "/planner"}
-        className="explore-btn"
-      >
-        Start planning your meals
-      </button>
     </section>
   );
 }

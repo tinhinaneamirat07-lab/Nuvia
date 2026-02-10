@@ -11,14 +11,21 @@ export default function Hero() {
             <h1>
               Cook <span className="accent">with intent</span>
               <br />
-              Eat beautifully
+              Eat <span className="accent-green">beautifully</span>
             </h1>
             <p className="subtitle">
-              A refined way to discover recipes, plan meals, and transform everyday cooking into an experience.
+              A refined way to discover recipes, plan meals, and transform
+              everyday cooking into an experience.
             </p>
           </div>
         </div>
-
+      </div>
+      
+      {/* Subtle decorative sparkle elements */}
+      <div className="hero-sparkles">
+        <span className="sparkle sparkle-1">✦</span>
+        <span className="sparkle sparkle-2">✦</span>
+        <span className="sparkle sparkle-3">✦</span>
       </div>
     </section>
   );

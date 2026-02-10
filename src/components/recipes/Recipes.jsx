@@ -90,7 +90,7 @@ export default function Recipes() {
       _id: "d1",
       title: "Citrus Spark",
       mood: "Bright & refreshing",
-      img: "/Pics/Tangerine Light Mocktail _ Jeju Tangerine, Barley Tea & Yuzu.jpg",
+      img: "/Tangerine Light Mocktail _ Jeju Tangerine, Barley Tea & Yuzu.jpg",
       ingredients: ["Orange", "Lemon", "Sparkling water", "Mint", "Ice"],
       steps: ["Slice citrus", "Muddle mint", "Add ice", "Top with sparkle"],
     },
@@ -328,7 +328,6 @@ export default function Recipes() {
       </div>
 
       <div className="recipes-head recipes-head-alt">
-        <span>DRINKS AS RITUALS</span>
         <h2>Choose a sip</h2>
       </div>
 
@@ -401,4 +400,3 @@ export default function Recipes() {
     </section>
   );
 }
-

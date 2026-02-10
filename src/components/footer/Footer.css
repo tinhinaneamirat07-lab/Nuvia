@@ -1,6 +1,6 @@
 .footer {
   background: var(--deep-brown);
-  color: rgba(255, 248, 241, 0.8);
+  color: rgba(245, 249, 229, 0.8);
   padding: 60px 8% 28px;
 }
 
@@ -24,7 +24,7 @@
 .footer-brand p {
   font-size: 13px;
   line-height: 1.6;
-  color: rgba(255, 248, 241, 0.65);
+  color: rgba(245, 249, 229, 0.65);
 }
 
 /* LINKS */
@@ -40,7 +40,7 @@
   margin-bottom: 8px;
   font-size: 12.5px;
   text-decoration: none;
-  color: rgba(255, 248, 241, 0.65);
+  color: rgba(245, 249, 229, 0.65);
   transition: color 0.3s ease;
 }
 
@@ -52,10 +52,10 @@
 .footer-bottom {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 248, 241, 0.12);
+  border-top: 1px solid rgba(245, 249, 229, 0.12);
   text-align: center;
   font-size: 12.5px;
-  color: rgba(255, 248, 241, 0.5);
+  color: rgba(245, 249, 229, 0.5);
 }
 
 /* RESPONSIVE */
@@ -65,3 +65,5 @@
     gap: 50px;
   }
 }
+
+

@@ -4,48 +4,51 @@
   left: 8%;
   right: 8%;
   width: auto;
-  height: 90px;
-  padding: 22px 8%;
+  height: 84px;
+  padding: 18px 6%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
   transition: all 0.4s ease;
-  background: linear-gradient(135deg, rgba(38, 28, 19, 0.95), rgba(55, 40, 26, 0.9));
-  border-radius: 35px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    135deg,
+    rgba(245, 249, 229, 0.95),
+    rgba(248, 251, 234, 0.92)
+  );
+  border-radius: 999px;
+  box-shadow: 0 18px 40px rgba(71, 91, 53, 0.14);
+  border: 1px solid rgba(225, 145, 132, 0.25);
+  backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
-  background: transparent;
-  backdrop-filter: none;
-  box-shadow: none;
-  border-color: transparent;
+  background: rgba(245, 249, 229, 0.92);
+  box-shadow: 0 12px 30px rgba(71, 91, 53, 0.12);
+  border-color: rgba(225, 145, 132, 0.3);
 }
 
 /* LOGO */
 .logo {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
-  font-weight: 400;
-  color: #d9cbb8;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--color-text);
   letter-spacing: 1px;
 }
 
 /* LINKS */
 .links {
   display: flex;
-  gap: 36px;
+  gap: 32px;
 }
 
 .links a {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0.5px;
-  color: #d2c2ad;
-  font-weight: 400;
+  color: var(--color-text-muted);
+  font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -56,8 +59,8 @@
   left: 0;
   bottom: -6px;
   width: 0%;
-  height: 1px;
-  background: #b79b78;
+  height: 2px;
+  background: var(--color-accent-strong);
   transition: width 0.3s ease;
 }
 
@@ -69,26 +72,29 @@
 /* CTA */
 .cta {
   padding: 10px 24px;
-  border-radius: 40px;
-  border: 1px solid #d1b997;
-  color: #d9cbb8;
+  border-radius: 999px;
+  border: 1px solid rgba(225, 145, 132, 0.55);
+  color: var(--color-bg);
   font-size: 13px;
   letter-spacing: 0.4px;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.35s ease;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-strong));
 }
 
 .cta:hover {
-  background: #d1b997;
-  color: #2f2419;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(225, 145, 132, 0.35);
 }
 
 .link-btn {
   background: none;
   border: none;
   font: inherit;
-  color: #d2c2ad;
+  color: var(--color-text-muted);
   cursor: pointer;
   position: relative;
 }
+
+

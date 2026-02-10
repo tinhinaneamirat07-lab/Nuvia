@@ -1,9 +1,13 @@
+/* ===================================
+   HERO SECTION - Nuvia Experience
+   =================================== */
+
 .hero-wrapper {
   min-height: 100vh;
-  padding: 160px 8% 120px;
-  background: linear-gradient(180deg, #fdfbf8 0%, #f6f1ea 100%);
+  padding: 180px 8% 120px;
+  background: var(--color-bg);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   overflow: hidden;
 }
@@ -12,61 +16,339 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(253, 251, 248, 0.2) 0%, rgba(246, 241, 234, 0.55) 100%),
-    url("/Gemini_pic.png") center/cover no-repeat;
-  transform: scale(1.05);
+  background:
+    linear-gradient(180deg, rgba(245, 249, 229, 0.08) 0%, rgba(245, 249, 229, 0.22) 100%),
+    url("/public/Gemini_pic.png") center/cover no-repeat;
+  transform: scale(1);
   z-index: 0;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: 620px;
+  margin: 0;
+  text-align: left;
+  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) backwards;
 }
 
-.hero-content {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
+/* ===================================
+   EYEBROW TEXT
+   =================================== */
 
 .hero-text .eyebrow {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #9c8366;
-  font-weight: 600;
+  color: rgba(71, 91, 53, 0.7);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 4px;
+  animation: fadeIn 1s ease-out 0.3s backwards;
 }
+
+/* ===================================
+   MAIN HEADING
+   =================================== */
 
 .hero-text h1 {
   font-family: "Playfair Display", serif;
-  font-size: 56px;
+  font-size: 58px;
   font-weight: 600;
-  line-height: 1.15;
-  color: #2f2419;
-  margin: 20px 0;
+  line-height: 1.12;
+  color: var(--color-text);
+  margin: 18px 0 14px;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s backwards;
 }
 
+/* "with intent" styling - coral/pink/terracotta accent */
 .hero-text .accent {
-  color: #b79b78;
+  color: var(--color-accent);
+  font-style: italic;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
+
+/* "beautifully" styling - darker green accent */
+.hero-text .accent-green {
+  color: #475b35;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Subtle hover effect on accents */
+.hero-text h1:hover .accent {
+  color: #c77f6a;
+  transform: translateY(-2px);
+}
+
+.hero-text h1:hover .accent-green {
+  color: #5a6b3d;
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   SUBTITLE TEXT
+   =================================== */
 
 .subtitle {
   max-width: 420px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.7;
-  color: #6a5846;
+  color: rgba(71, 91, 53, 0.7);
   margin-bottom: 36px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   font-weight: 500;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s backwards;
 }
 
 .the-text {
-  transform: translateY(-60px);
+  transform: translateY(-10px);
 }
 
+/* ===================================
+   DECORATIVE SPARKLES
+   =================================== */
+
+.hero-sparkles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  font-size: 24px;
+  color: rgba(212, 149, 140, 0.3);
+  animation: sparkleFloat 8s infinite ease-in-out;
+  opacity: 0;
+}
+
+.sparkle-1 {
+  top: 20%;
+  right: 25%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+}
+
+.sparkle-2 {
+  top: 65%;
+  right: 15%;
+  animation-delay: 3s;
+  animation-duration: 12s;
+  font-size: 18px;
+}
+
+.sparkle-3 {
+  top: 45%;
+  right: 35%;
+  animation-delay: 5s;
+  animation-duration: 9s;
+  font-size: 20px;
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sparkleFloat {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.8) rotate(0deg);
+  }
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(15px, -20px) scale(1.1) rotate(180deg);
+  }
+  90% {
+    opacity: 0.3;
+  }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
 @media (max-width: 900px) {
+  .hero-wrapper {
+    padding: 140px 6% 100px;
+  }
+
   .hero-text h1 {
     font-size: 42px;
+  }
+
+  .hero-text .eyebrow {
+    font-size: 11px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    max-width: 380px;
+  }
+
+  .sparkle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding: 120px 5% 80px;
+    min-height: 85vh;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    margin: 14px 0 12px;
+  }
+
+  .hero-text .eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    line-height: 1.65;
+    max-width: 340px;
+    margin-bottom: 28px;
+  }
+
+  .the-text {
+    transform: translateY(-8px);
+  }
+
+  .hero-sparkles {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-wrapper {
+    padding: 100px 5% 60px;
+    min-height: 75vh;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .hero-text .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 300px;
+  }
+
+  .the-text {
+    transform: translateY(-5px);
+  }
+}
+
+/* ===================================
+   ACCESSIBILITY
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content,
+  .hero-text .eyebrow,
+  .hero-text h1,
+  .subtitle,
+  .sparkle {
+    animation: none;
+  }
+
+  .hero-text .accent,
+  .hero-text .accent-green {
+    transition: none;
+  }
+
+  .hero-wrapper::before {
+    filter: none;
+  }
+}
+
+/* ===================================
+   HIGH CONTRAST MODE
+   =================================== */
+
+@media (prefers-contrast: high) {
+  .hero-text .eyebrow {
+    color: rgba(71, 91, 53, 0.9);
+  }
+
+  .subtitle {
+    color: rgba(71, 91, 53, 0.9);
+  }
+
+  .sparkle {
+    display: none;
+  }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+
+@media print {
+  .hero-wrapper {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-wrapper::before {
+    display: none;
+  }
+
+  .hero-sparkles {
+    display: none;
+  }
+
+  .hero-text h1,
+  .subtitle,
+  .hero-text .eyebrow {
+    color: black;
   }
 }

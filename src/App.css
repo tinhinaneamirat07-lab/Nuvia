@@ -1,11 +1,11 @@
 /* PALETTE ONLY */
 :root {
-  --blueberry:  #2C3F70;
-  --strawberry: #C0392B;
-  --buttercream:#F3F1EC;
-  --violet:     #7D86D9;
-  --meringe:    #FAFAFA;
-  --text-dark:  #2B2B2B;
+  --blueberry:  #4D2308;
+  --strawberry: #814414;
+  --buttercream:#F3CEA2;
+  --violet:     #F1B93D;
+  --meringe:    #F3CEA2;
+  --text-dark:  #4D2308;
 }
 
 /* CLEAN RESET */
@@ -21,4 +21,5 @@ body,
   margin: 0;
   padding: 0;
 }
+
 

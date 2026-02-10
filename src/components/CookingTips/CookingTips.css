@@ -1,8 +1,8 @@
 .philosophy {
   position: relative;
   padding: 140px 8%;
-  background: linear-gradient(180deg, #fdfbf8 0%, #f6f1ea 100%);
-  color: #2f2419;
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  color: var(--color-text);
   overflow: hidden;
   isolation: isolate;
 }
@@ -12,7 +12,7 @@
   inset: 0;
   background:
     radial-gradient(60% 60% at 15% 0%, rgba(183, 155, 120, 0.16) 0%, rgba(183, 155, 120, 0) 60%),
-    radial-gradient(50% 50% at 85% 15%, rgba(156, 131, 102, 0.14) 0%, rgba(156, 131, 102, 0) 60%);
+    radial-gradient(50% 50% at 85% 15%, rgba(225, 145, 132, 0.14) 0%, rgba(225, 145, 132, 0) 60%);
   pointer-events: none;
   animation: glow-drift 10s ease-in-out infinite;
 }
@@ -39,7 +39,7 @@
 .philosophy-eyebrow {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #9c8366;
+  color: var(--color-text-muted);
   font-weight: 600;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .philosophy h2 span {
-  color: #b79b78;
+  color: var(--color-accent);
 }
 
 /* GRID */
@@ -68,7 +68,7 @@
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(183, 155, 120, 0.22);
-  box-shadow: 0 14px 36px rgba(47, 36, 25, 0.08);
+  box-shadow: 0 14px 36px rgba(98, 6, 7, 0.08);
   text-align: left;
   transform: translateY(30px) scale(0.98);
   opacity: 0;
@@ -79,7 +79,7 @@
 .philo-number {
   font-size: 14px;
   letter-spacing: 2px;
-  color: #9c8366;
+  color: var(--color-text-muted);
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -96,12 +96,12 @@
 .philosophy-item p {
   font-size: 14.5px;
   line-height: 1.7;
-  color: #6a5846;
+  color: var(--color-text-muted);
 }
 
 .philosophy-item:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 28px 56px rgba(47, 36, 25, 0.18);
+  box-shadow: 0 28px 56px rgba(98, 6, 7, 0.18);
   border-color: rgba(183, 155, 120, 0.38);
 }
 
@@ -179,3 +179,5 @@
     font-size: 36px;
   }
 }
+
+

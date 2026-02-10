@@ -10,16 +10,16 @@
   --planner-gold: var(--burnished-gold);
   --planner-olive: var(--muted-olive-green);
   --planner-amber: var(--warm-amber);
-  --planner-card: rgba(255, 248, 241, 0.9);
-  --shadow-0: 0 18px 40px rgba(78, 59, 49, 0.18);
-  --shadow-1: 0 10px 30px rgba(78, 59, 49, 0.14);
-  --shadow-2: 0 6px 18px rgba(78, 59, 49, 0.12);
+  --planner-card: rgba(245, 249, 229, 0.9);
+  --shadow-0: 0 18px 40px rgba(71, 91, 53, 0.18);
+  --shadow-1: 0 10px 30px rgba(71, 91, 53, 0.14);
+  --shadow-2: 0 6px 18px rgba(71, 91, 53, 0.12);
 }
 
 .planner-week {
   padding: 120px 7% 80px;
   background:
-    radial-gradient(1200px 420px at 50% -200px, rgba(255, 248, 241, 0.9) 0%, transparent 60%),
+    radial-gradient(1200px 420px at 50% -200px, rgba(245, 249, 229, 0.9) 0%, transparent 60%),
     linear-gradient(180deg, var(--planner-ivory) 0%, var(--planner-beige) 60%, rgba(240, 226, 209, 0.85) 100%);
   color: var(--planner-brown);
   min-height: 100vh;
@@ -80,8 +80,8 @@
 }
 
 .ribbon-pill {
-  border: 1px solid rgba(78, 59, 49, 0.2);
-  background: rgba(255, 248, 241, 0.7);
+  border: 1px solid rgba(71, 91, 53, 0.2);
+  background: rgba(245, 249, 229, 0.7);
   color: var(--planner-charcoal);
   padding: 8px 18px;
   border-radius: 999px;
@@ -115,7 +115,7 @@
 ========================= */
 
 .planner-column {
-  background: rgba(255, 248, 241, 0.7);
+  background: rgba(245, 249, 229, 0.7);
   border-radius: 26px;
   padding: 22px;
   backdrop-filter: blur(10px);
@@ -151,7 +151,7 @@
 
 .day-empty {
   font-size: 12px;
-  color: rgba(78, 59, 49, 0.65);
+  color: rgba(71, 91, 53, 0.65);
   margin: 6px 0 10px;
 }
 
@@ -172,7 +172,7 @@
 }
 
 .mini-card {
-  border: 1px solid rgba(78, 59, 49, 0.1);
+  border: 1px solid rgba(71, 91, 53, 0.1);
   background: rgba(240, 226, 209, 0.65);
   border-radius: 16px;
   padding: 10px;
@@ -189,7 +189,7 @@
   height: 44px;
   border-radius: 12px;
   object-fit: cover;
-  background: rgba(184, 155, 106, 0.35);
+  background: rgba(225, 145, 132, 0.35);
 }
 
 .mini-card.selected,
@@ -211,7 +211,7 @@
 
 .recipe-desc {
   font-size: 11px;
-  color: rgba(78, 59, 49, 0.65);
+  color: rgba(71, 91, 53, 0.65);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -222,7 +222,7 @@
 ========================= */
 
 .planner-feature {
-  background: rgba(255, 248, 241, 0.8);
+  background: rgba(245, 249, 229, 0.8);
   border-radius: 30px;
   padding: 22px;
   backdrop-filter: blur(10px);
@@ -247,7 +247,7 @@
 .feature-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(78, 59, 49, 0) 40%, rgba(78, 59, 49, 0.62) 100%);
+  background: linear-gradient(180deg, rgba(71, 91, 53, 0) 40%, rgba(71, 91, 53, 0.62) 100%);
   color: var(--planner-ivory);
   padding: 24px;
   display: flex;
@@ -273,7 +273,7 @@
 .feature-overlay p {
   font-size: 13px;
   margin: 0;
-  color: rgba(255, 248, 241, 0.9);
+  color: rgba(245, 249, 229, 0.9);
 }
 
 .feature-body {
@@ -298,7 +298,7 @@
 .feature-stats span {
   display: block;
   font-size: 11px;
-  color: rgba(78, 59, 49, 0.6);
+  color: rgba(71, 91, 53, 0.6);
   margin-bottom: 4px;
 }
 
@@ -315,10 +315,10 @@
 }
 
 .feature-card {
-  background: rgba(255, 248, 241, 0.9);
+  background: rgba(245, 249, 229, 0.9);
   border-radius: 18px;
   padding: 18px;
-  border: 1px solid rgba(78, 59, 49, 0.08);
+  border: 1px solid rgba(71, 91, 53, 0.08);
 }
 
 .feature-card h3 {
@@ -343,7 +343,7 @@
 }
 
 .muted {
-  color: rgba(78, 59, 49, 0.6);
+  color: rgba(71, 91, 53, 0.6);
   font-size: 12px;
 }
 
@@ -399,7 +399,7 @@
 
 .luxe-add {
   margin-top: 60px;
-  background: rgba(255, 248, 241, 0.85);
+  background: rgba(245, 249, 229, 0.85);
   border-radius: 30px;
   padding: 50px;
   max-width: 760px;
@@ -432,7 +432,7 @@
 
 .luxe-add input::placeholder,
 .luxe-add textarea::placeholder {
-  color: rgba(78, 59, 49, 0.55);
+  color: rgba(71, 91, 53, 0.55);
 }
 
 .luxe-add button {
@@ -501,3 +501,5 @@
     height: 220px;
   }
 }
+
+
